@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/show_all">All Posts</a> | 
+        <a href="/about">About</a>
+    </nav>
+    <h1>{{ title }}</h1>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

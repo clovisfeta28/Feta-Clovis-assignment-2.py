@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="profile-section">
+           <img src="{% static 'images/image1.jpg' %}" alt="Feta Clovis" class="profile-pic">
+            <div class="profile-info">
+                <h3>FETA CLOVIS</h3>
+                <p class="title">Web Developer & Django Architect</p>
+            </div>
+        </div>
+        <div class="bio">
+            <p>
+  As a web designer and Django Architect, I love crafting digital experiences that are as functional as they are beautiful.
+  My focus is on creating responsive, fast, and user-friendly websites that leave a lasting impression.
+</p>
+            <p>This blog is my journey through the world of Django development, where I share my experiences, challenges, and successes.</p>
+            <p>When I'm not coding, you can find me reading tech blogs, hiking, or experimenting with new programming frameworks.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

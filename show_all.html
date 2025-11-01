@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+    {% for blog, image in all_blogs %}
+        <div>
+            <img src="{% static image %}" alt="Blog image" width="400">
+            <p>{{ blog }}</p>
+            <hr>
+        </div>
+    {% endfor %}
+    <a href="/">Back to Home</a>
+{% endblock %}
